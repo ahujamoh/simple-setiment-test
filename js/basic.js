@@ -3,7 +3,7 @@ function myFunction() {
     var tweet = document.getElementById("tweetContent").value;
     data = {"tweet": tweet};
     console.log("You wrote " + tweet);
-    var URL = 'http://54.213.252.131/sentiment';
+    var URL = 'https://twitter140.tk/sentiment';
     $.post(URL, data, function (response, status, xhr) {
         console.log(response);
         console.log(status);
